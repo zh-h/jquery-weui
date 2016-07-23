@@ -34,6 +34,13 @@ gulp.task('js', function(cb) {
     .pipe(gulp.dest('./dist/js/'))
     .on("end", end);
 
+      gulp.src([
+    './src/js/metro-picker.js'
+  ])
+    .pipe(concat({ path: 'metro-picker.js'}))
+    .pipe(gulp.dest('./dist/js/'))
+    .on("end", end);
+
   gulp.src([
     './src/js/swiper.jquery.js',
     './src/js/swiper-wrap.js',
