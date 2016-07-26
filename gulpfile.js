@@ -23,7 +23,7 @@ gulp.task('js', function(cb) {
   count = 0;
   var end = function(){
     count ++;
-    if(count >= 3) cb();
+    if(count >= 4) cb();
   };
 
   gulp.src([
