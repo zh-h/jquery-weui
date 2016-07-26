@@ -80,7 +80,7 @@
             values.shift();
             return;
           }
-
+          values.shift();
         },
 
         cols: cols
@@ -106,7 +106,6 @@
   };
 
   defaults = $.fn.metroPicker.prototype.defaults = {
-    showDistrict: true //是否显示地区选择
   };
 
 }($);
